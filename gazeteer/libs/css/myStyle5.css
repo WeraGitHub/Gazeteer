@@ -1,0 +1,244 @@
+body {
+    font-family:  Verdana, Geneva, sans-serif;
+    color: #525252;;    
+    text-align: center;
+    background-color: white;    
+    }
+
+
+/* #project1Container {
+    background-color: #dfddd9ef;
+    padding: 0% 0.5% 0.5% 0.5%;
+} */
+
+#beforeMap {
+    position: absolute;
+    width: 100%;
+    /* height: 10%; */
+    z-index: 2;
+    /* background-color: #00000099; */
+    /* background-color: #22385a; */
+    background-color: #3a3a3a;
+    color: white;
+    /* font-size: 1em; */
+    text-align: center;
+    /* padding: 0.5%; */
+    /* margin: 0.5% 0%; */
+}
+
+#mapid { 
+    z-index: 0;
+    
+    height: 100vh;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(0.65);
+}
+#span1 {
+    font-family:  Verdana, Geneva, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    float: left;
+    margin-left: 0.5%;
+
+}
+#span2 {
+    font-family:  Verdana, Geneva, sans-serif;
+    font-size: 1.05em;    
+    display: inline-block;
+}
+
+
+#selectCountry {
+    /* width: 12em; */
+    width:20%;
+    font-size: 0.9em;
+    border-radius: 0%;
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin: 0.5%;
+    display: inline;
+}
+#btnMap, #btnMapi {
+    /* background-color:#142338; */
+    background-color: #1d1f1d;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+    margin: 0.5%;
+    display: inline;
+}
+#btnMapi {
+    display: none;
+}
+#btnMap:hover {
+    background-color: #000000;
+    border: none;
+}
+#btnMapi:hover {
+    background-color: #1d1f1d;
+    border: none;
+}
+#btnMap:selection {
+    background-color: #1d1f1d;
+    border: none;
+}
+@media screen and (max-width: 600px) {
+    #span2 {
+        display: none;
+    }
+    #btnMap {
+        display: none;
+    }
+    #btnMapi {
+        display: inline;        
+        background-color: #1d1f1d;
+        border-radius: 15%;
+    }
+    #selectCountry {
+        width: 40%;
+        border-radius: 5%;
+  }
+    #span1 {
+        font-size: 1.5em;
+    }
+    #selectCountry {
+        font-size: 0.7em;
+    }
+}
+
+/* .thTitle {
+    text-align: left;
+} */
+th, td {
+    text-align: left;
+}
+
+
+#th1, #th2, #th3, #th4 {
+    text-align: center;
+    background-color:  #dce4dc;
+    column-span: 2;
+}
+#infoModal{
+    border-radius: 0%;
+}
+#table1 {
+    width: 100%;
+}
+#btnClose1, #btnClose2 {
+    background-color: #545754;
+}
+#btnClose1:hover {
+    background-color: #1d1f1d;
+}
+#btnClose2:hover {
+    background-color: #1d1f1d;
+}
+
+
+.card-header {
+    font-family:  Verdana, Geneva, sans-serif;
+    font-weight: bold;
+}
+#icon1 {
+    position: absolute;
+    top: 80px;
+    /* left: 1%;  */
+    left: 20px;
+    z-index: 2;
+}
+@media screen and (min-width: 601px) {
+    #icon1 {
+        display: none;
+    }
+}
+
+#iconsAll {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: -20px;
+    z-index: 2;    
+}
+
+
+#icon2, #icon3, #icon4, #icon5 {
+    position: relative;
+    zoom: 1;
+    margin: 20px 0px;
+}
+
+
+#c1, #c2, #c3, #c4 {
+
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+
+}
+
+.btnPhone {
+    background-color: #54575480;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    margin: 0.5%;
+}
+.btnPhone:hover {
+    color: white;
+    background-color: #1d1d1db4;
+}
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+    }
+    #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #56829e ;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+    }
+    @-webkit-keyframes animate-preloader {
+    0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+    100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    }
+    }
+    @keyframes animate-preloader {
+    0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+    
+    100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    }
+    }
